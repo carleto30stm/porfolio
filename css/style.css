@@ -133,10 +133,7 @@ body{
 .header{
     width: 100%;
     min-width: sem;
-    
-
     padding: 1em 2em;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -314,6 +311,10 @@ z-index: 2;
     width: 100%;
 
 }
+.section h3{
+    animation: desdeLateral 1000ms linear;
+    -webkit-animation: desdeLateral 1000ms linear;
+}
 
 
 .about .h2{
@@ -351,7 +352,22 @@ z-index: 2;
     color: var(--blanco);
     position: relative;
 }
-
+@keyframes desdeLateral{
+    from{
+        transform: translateX(600px);
+        -webkit-transform: translateX(600px);
+        -moz-transform: translateX(600px);
+        -ms-transform: translateX(600px);
+        -o-transform: translateX(600px);
+}
+to{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+}
 
 @keyframes circulo1{
     form{
